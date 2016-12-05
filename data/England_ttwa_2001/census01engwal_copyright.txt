@@ -1,0 +1,269 @@
+2001 Census Boundary Derived Datasets (England and Wales)
+-------------------------------------
+
+The following Statement must appear on any maps or documents which use this boundary dataset, which is derived from 2001 Census digital boundary data:
+
+"This work is based on data provided through EDINA UKBORDERS with the support of the ESRC and JISC and uses boundary material which is copyright of the Crown." 
+
+
+UKBORDERS / CRS TERMS AND CONDITIONS.
+
+End User Licence 
+This Agreement is made between you and the University of Essex (also referred to as the "registrar") and the service funders in order to provide you (the “End User”) with the right to use the collections provided via the ESRC/JISC Census Programme, the Economic and Social Data Service (ESDS) and the UK Data Archive, according to the terms below. 
+
+In this agreement:
+
+"Data Team" means in relation to a particular data collection, the registrar, the relevant data service providers, and (to the extent that the Special Conditions and/or metadata specific to a particular data collection expressly provide) the service funders, data collection funders and/or original data creators or depositors. 
+
+"data service provider" means the persons or organisations that directly provide you with the data collections (on behalf of the service funder). The data service provider for a particular data collection is identified in the Special Conditions and/or metadata applicable to that data collection;
+
+"service funder" means the persons or organisations that fund the data service provider as defined above. The service funder for a particular data collection is identified in the Special Conditions and/or metadata applicable to that data collection;
+
+"data collection funder" means the persons or organisations that funded the collection and/or creation of the data collections. The data collection funder for a particular data collection is identified in the Special Conditions and/or metadata applicable to that data collection;
+
+"original data creator or depositor" means the persons or organisations that originally collected, created or deposited the materials making up the data collections and/or who own the intellectual property rights in the data collections. The original data creator or depositor for a particular data collection is identified in the Special Conditions and/or metadata applicable to that data collection;
+
+"registrar" means the person or organisation responsible for the system that registers End Users and issues them with End User Licences (being the University of Essex);
+
+"Special Conditions" means any further conditions applicable to the use of one or more data collections by an End User, as notified to the End User in accordance with paragraph 5 of the End User Licence. 
+
+"metadata" means any additional or bibliographic information about one or more of the data collections, as notified to the End User from time to time. Metadata may be supplied by electronic means.
+
+I (the "End User") agree to the following conditions of use in consideration of the data collections being made available to me through the various contributions of each member of the Data Team:  
+1. To use the data collections only in accordance with this End User Licence and to notify promptly the registrar and the data service provider of any breach of its terms in writing or of any infringements of the data collections of which I become aware.  
+2. To use and to make personal copies of any part of the data collections only for the purposes of not-for-profit research or teaching or personal educational development. To obtain permission prior to using part or all of the data collections for commercial purposes by contacting the registrar and/or relevant data service provider, where relevant, in order to obtain an appropriate licence from the rights holder(s) in question or their permitted licensee if one is available. 
+3. That this Licence does not operate to transfer any interest in intellectual property from the data collection funders, service funder(s), the data service providers, the original data creators, producers, depositors, copyright or other right holders (including without limitation the ONS or the Crown ) to me. That any rights subsisting in materials derived now or in the future from the data collections which are the intellectual property of the Crown are hereby assigned (by way of assignment of present and future intellectual property) to the Crown by this Licence to the extent not already vested in the Crown. To take all steps necessary to give effect to this Clause (including by executing further written documentation). 
+4. That the Licence and the data collections are provided by the Data Team on an "as is" basis and without warranty or liability of any kind. Any representations or warranties given by any member of the Data Team relating to this licence, expressed or implied, are excluded to the maximum extent permitted by law. 
+5. To abide by any further conditions notified to me from time to time by the registrar or the relevant data service provider that may apply to the access to, or use of, specific materials within the data collections or particular data collections. Notice of further conditions under this paragraph may be given to me by electronic means, for example, by way of a pop-up window upon my ordering one or more data collections. My acceptance of the further conditions shall be required before I gain access to the data collections in question. In this Agreement such further conditions are referred to as Special Conditions. 
+6. To give access to the data collections, in whole or in part, or any material derived from the data collections, only to registered End Users who have entered into an End User Licence and accepted the relevant Special Conditions necessary to access and use the data collections (with the exception of data collections or material derived from data collections supplied for the stated purpose of teaching or included in publications made for the purposes set out in paragraph 2).  
+7. To ensure that the means of access to the data (such as passwords) are kept secure and not disclosed to a third party except by special written permission or licence obtained from the original data service provider. 
+8. To preserve at all times the confidentiality of information pertaining to individuals and/or households in the data collections where the information is not in the public domain. Not to use the data to attempt to obtain or derive information relating specifically to an identifiable individual or household, nor to claim to have obtained or derived such information. In addition, to preserve the confidentiality of information about, or supplied by, organisations recorded in the data collections. This includes the use or attempt to use the data collections to compromise or otherwise infringe the confidentiality of individuals, households or organisations. 
+9. To acknowledge, in any publication, whether printed, electronic or broadcast, based wholly or in part on the data collections, the original data creators, depositors or copyright holders, the service funders and the data service provider(s) in the form specified on the data distribution notes or in accompanying metadata received with the dataset or notified to me and without prejudice to paragraph 5 above to comply with any restrictions on my use of the data collections referred to or referenced therein or otherwise notified to me from time to time. To cite, in any publication, whether printed, electronic or broadcast, based wholly or in part on the data collections, the data collections used in the form specified on the data distribution notes or in accompanying metadata received with the dataset or notified to me.  
+10. To supply the relevant data service provider with the bibliographic details of any published work based wholly or in part on the data collections.  
+11. That the members of the Data Team may hold and process any personal data submitted by me for validation and statistical purposes, and for the purposes of the management of the service or for any other lawful purpose notified to me and to which I have consented under this Agreement in relation to a particular data collection, and they may also pass the information on to other parties such as: (i) depositors and distributors of material contained in or accessed via the data service provider; (ii) copyright and other intellectual property rights owners whose material is held by the data service provider; as well as (iii) each member of the Data Team’s organisation and (iv) my own institution or organisation, in compliance with the Data Protection Act 1998.  
+12. To notify the data service provider of any errors discovered in the data collections.  
+13. That any personal data submitted by me is accurate to the best of my knowledge, and that any changes in that personal data, including my educational or employment status, will be made known to the registrar at the earliest possible opportunity.  
+14. To meet any charges that may from time to time be levied by any member of the Data Team for the supply of the data collections including, where relevant, annual service fees and royalty fees.  
+15. At the conclusion of my research (or if earlier at any time at the request of a member of the Data Team), to offer for deposit in the data collection(s) on a suitable medium and at my own expense any new data collections which have been derived from the materials supplied or which have been created by the combination of the data supplied with other data. The deposit of the derived data collection(s) will include sufficient explanatory documentation to enable the new data collection(s) to be accessible to others.  
+16. I understand that breach of any of the provisions of this Agreement will lead to immediate termination of my access to all services provided by the Data Team either permanently or temporarily, at the discretion of a member of the Data Team, and may result in legal action being taken against me. I understand that where there is no breach of this Licence, it may be terminated, or its terms altered, by a member of the Data Team either after 30 days notice; or, if a service charge has been paid in advance, at the end of the period for which payment has been made, whichever is the longer. The failure to exercise or delay in exercising a right or remedy provided by this Agreement or by law does not constitute a waiver of the right or remedy or a waiver of other rights or remedies.  
+
+DISCLAIMERS 
+To the extent that applicable law permits: 
+The members of the Data Team bear no legal responsibility for the accuracy or comprehensiveness of the data supplied. 
+The members of the Data Team accept no liability for, and I will not be entitled to claim against them in respect of, any direct, indirect, consequential or incidental damages or losses arising from use of the data collections, or from the unavailability of, or break in access to, the service, for whatever reason. 
+Whilst steps have been taken to ensure all licences, authorisation and permissions required for the granting of this Licence have been obtained, this may not have been possible in all cases, and no warranties or assurance are given in this regard. To the extent that additional licences, authorisations and permissions are required to use the data collections in accordance with this Licence, it is the End User's responsibility to obtain them. 
+I agree to indemnify and shall keep indemnified each member of the Data Team against any costs, actions, claims, demands, liabilities, expenses, damages or losses (including without limitation consequential losses and loss of profit, and all interest, penalties and legal and other professional costs and expenses) arising from or in connection with any third party claim made against any member of the Data Team relating to my use of the data collections or any other activities in relation to the data where such use is in breach of this licence. 
+ 
+If the whole or any part of a provision of this Agreement is void, unenforceable or illegal for any reason, that provision will be severed and the remainder of the provisions of this Agreement will continue in full force and effect as if this Agreement had been executed with the invalid provision eliminated. 
+This Agreement may be enforced separately in relation to each data collection provided to the End User by any member of the Data Team and the End User. No other persons may enforce this Agreement under the Contract (Rights of Third Parties) Act 1999.
+
+This Agreement (which is the entire agreement between the parties and supersedes any previous agreement between them) may be varied in writing by agreement of the relevant service funders, the registrar, and the End User (who may give its consent to such variations by electronic means). No consent from any other party is required to vary or rescind this Agreement.
+
+This Agreement and any documents to be entered into pursuant to it shall be governed by and construed in accordance with the laws of England and Wales and each Party irrevocably submits to the exclusive jurisdiction of the courts of England and Wales over any claim or matter arising under or in connection with this Agreement and the documents entered into pursuant to it.  
+
+
+
+---------------------------------------------------------------------------------------------
+2001 CENSUS : Digitised Boundary Data (England and Wales) End User Licence Special Conditions 
+---------------------------------------------------------------------------------------------
+
+You (the End User) and the Data Team agree that in relation to the data collection set out below:
+ 
+
+
+the Data Team consists of: 
+Census Geography Data Unit (UKBORDERS), EDINA (University of Edinburgh) and/or Census Dissemination Unit, MIMAS (University of Manchester) and/or Census Interaction Data Service (University of Leeds), the data service providers; 
+Economic and Social Research Council (with the support of the Joint Information Systems Committee*), the service funder; 
+Ordnance Survey and Office for National Statistics, the data collection funders; 
+Ordnance Survey and Office for National Statistics, the original data creators; 
+Office for National Statistics, the depositor; 
+The Census Registration Service (Univeristy of Essex), the registrar; and 
+
+
+the following additional conditions of use apply: 
+The data collection and related materials are to be used only by yourself for academic research and/or teaching and not for commercial purposes or consultancy work or in connection with any work undertaken for financial reward or gain. 
+The right to use the Ordnance Survey material reproduced in the Output Area boundaries is granted by a separate Ordnance Survey licence (“Output Area licence – Interim version”) included here (see below). 
+ 
+
+Capitalised terms not defined in these Special Conditions are defined in your End User Licence. 
+
+DATA COLLECTION 
+
+These Special Conditions are applicable to the following data products (together the ‘data collection’):
+
+2001 Census : Digitised Boundary Data (England and Wales).
+
+* The JISC – Joint Information Systems Committee – is a joint committee of the UK further and higher education funding bodies, and is responsible for supporting the innovative use of information and communication technology (ICT) to support learning, teaching and research. It is best known for providing the JANET network, a range of support, content and advisory services, and a portfolio of high-quality resources. Information about the JISC, its services and programmes can be found on the JISC web site.  
+ 
+---------------------------
+OUTPUT AREAS - O.S. LICENCE
+---------------------------
+ 
+ Output Area (OA) boundaries are in part derived from OS information, and some OA boundaries which follow ward or parish boundaries reproduce parts of the OS BoundaryLine product. This Licence applies only to those parts of these boundaries where OS has Intellectual Property Rights. The right to use the OS material reproduced in the OA boundaries is granted by this license.
+ 
+ BEFORE YOU MAKE ANY USE OF THIS DATA, YOU MUST CAREFULLY READ THE TERMS AND CONDITIONS OF THIS LICENCE. BY ACCESSING THE DATA YOU WILL BE DEEMED TO BE BOUND BY THE TERMS OF THIS LICENCE. IF YOU DO NOT WISH TO BE BOUND THEN YOU MUST RETURN THE DATA TO US.
+ 
+ 1. Licence
+ 
+ We grant you a non-exclusive non-transferable licence to copy and use the data which is derived from Ordnance Survey Data (“OA Data”) in accordance with the terms of this licence agreement.
+ 
+ You may only use the OA Data for Standard Licensed Use and in accordance with the terms of the attached terms (see ANNEX A - Standard Licensed Use) which you must read and accept.
+ 
+ 2. Intellectual Property Rights
+ 
+ Intellectual property rights in the OA Data are owned by the Crown and us. You shall not have any rights or interests in the OA Data other than as described in this licence.
+ 
+ You must ensure that you protect and do not interfere with any trade names and trade marks that are in or accompany the OA Data.
+ 
+ All copies of the OA Data in whatever form must contain the following acknowledgement "Source: 2001 Census, Output Area Boundaries. Crown copyright 2003. Crown copyright material is reproduced with the permission of the Controller of HMSO ".
+ 
+ 3. Restrictions
+ 
+ You must not sub-license, lend, transfer or otherwise dispose of the OA Data or this licence, except that you may make available to a third party who has also entered into a licence relating to the OA Data copies of the OA Data overlaid with your own Data as permitted by this licence.
+ 
+ You must not modify, alter, decompile, reverse engineer, or disassemble the OA Data beyond that which is necessary to allow the use of the OA Data within your system. This shall not prevent you from overlaying your data on the OA Data or the construction of higher level aggregate polygons derived from the OA data.
+ 
+ Furthermore, we both agree that Ordnance Survey shall benefit from the Contracts (Rights of Third Parties) Act 1999 so that Ordnance Survey can enforce its rights directly against you.
+ 
+ 4. PROMISES
+ 
+ WE PROMISE THAT WE HAVE THE POWER TO GRANT THIS LICENCE. HOWEVER, YOU ACKNOWLEDGE THAT THE OA DATA HAS NOT BEEN PREPARED TO MEET YOUR INDIVIDUAL REQUIREMENTS AND THEREFORE IT IS PROVIDED TO YOU ON AN ‘AS IS’ BASIS. IT IS YOUR RESPONSIBILITY TO ENSURE THAT THE OA DATA IS FIT FOR YOUR INTENDED USE. TO THE FULLEST EXTENT PERMITTED BY LAW WE EXCLUDE ANY CONDITIONS OR TERMS THAT MAY BE IMPLIED BY LAW. WE SHALL NOT IN ANY EVENT BE LIABLE FOR ANY INDIRECT, SPECIAL, CONSEQUENTIAL, OR INCIDENTAL LOSSES OR FOR LOSS OF OA DATA, LOSS OF PROFITS, LOSS OF OR INTERRUPTION TO BUSINESS WHETHER ARISING IN TORT (INCLUDING NEGLIGENCE) CONTRACT OR OTHERWISE. WE DO NOT ATTEMPT TO EXCLUDE ANY LIABILITY THAT CANNOT BE EXCLUDED.
+ 
+ 5. Term
+ 
+ You are licensed to use the OA Data until 3rd February 2013 unless this licence is terminated earlier in accordance with paragraph 6 below.
+ 
+ 6. Terminate
+ 
+ # We may terminate this licence at any time if any of the following events arises: You breach any of the terms of this licence;
+ # You become insolvent or bankrupt or cease to do business.
+ In the event of termination of this licence, you shall cease to use the OA Data and if we request, you shall immediately either return or destroy the OA Data. You will provide us with written confirmation of the action you have taken.
+ 
+ 7. Law
+ 
+ This will be governed by and construed in accordance with English law and both parties accept the exclusive jurisdiction of the English courts. If any part of this licence is held to be invalid, unenforceable, or illegal, we both agree that the remainder of the licence will stand.
+ 
+ 8. Trade marks
+ 
+ Ordnance Survey and the OS symbol are registered trade marks of Ordnance Survey, the national mapping agency of Great Britain.
+ 
+ ANNEX A Standard Licensed Use
+ 
+ # Important notice
+ 
+ Any use of Ordnance Survey Data which is not expressly addressed in this Licensed Use Schedule under the definition of ‘Standard Licensed Use’ or which is not expressly permitted is prohibited. Any other use of Ordnance Survey Data may be made only with the express written agreement of Ordnance Survey in a form of a licence for the commercial use of such data, the terms and conditions for which are available on request.
+ 1 Definitions
+ 
+ For the purposes of this Schedule:
+ 
+ Commercial Purposes means any purposes which seek to exploit the Ordnance Survey Data for Financial Gain or any purpose which is or is likely to place the use of the Ordnance Survey Data in competition with a third party who is seeking to exploit data licensed from Ordnance Survey for Financial Gain or for any other purpose;
+ 
+ Display means a single, static image with no size restriction, for example on display boards or on the Internet;
+ 
+ Excluded Body means any of the following:
+ 
+ (i) Central government departments, Crown bodies and non-departmental public bodies;
+ (ii) Local authorities;
+ (iii) Other public sector organisations (including companies in public ownership);
+ (iv) Utility companies managing fixed assets as follows:
+ - Gas companies
+ - Electricity companies
+ - Water companies
+ - Cable operators
+ - Oil companies
+ - Fixed line telecommunications companies;
+ 
+ Financial Gain means a benefit accruing where the Customer or any third party used by, or connected to, the Customer receives any revenue or credit for the publication or use of any Ordnance Survey Data in any format; and
+ 
+ Internal Business Use means the use of Ordnance Survey Data as set out in Section 2.1 below.
+ 
+ Promotion(al) means bringing any product or service to the attention of actual or potential customers and where multiple copies are made in any media, the total map area at scale must not exceed A3 or 1250 cm2.
+ 
+ 2 Internal Business Use
+ 
+ 2.1 Internal Business Use is defined as the use of Ordnance Survey Data in the ordinary day-to-day activities involved in the internal administration and running of the Customer’s business or organisation.
+ 
+ 2.2 Such use of Ordnance Survey Data is only permitted in the following circumstances:
+ 
+   2.2.1 solely and explicitly for the administration and operation of the Customer’s business or organisation (which excludes its supply to any third party unless expressly permitted in this Schedule);
+ 
+   2.2.2 in reports and submissions to third parties (where such activities relate to the internal administration and running of the Customer’s business or organisation and the Customer shall advise such third parties that such Ordnance Survey Data shall not be used for any other purpose), provided such reports and submissions do not carry paid for advertising in respect of third parties. Such use shall include electronic transmission of a graphic image that is a raster data file produced solely for the purposes of allowing such third party to view and print one copy;
+ 
+   2.2.3 by the Customer’s contractors and agents when undertaking any activity for the Customer which the Customer is permitted to undertake itself under this Schedule but solely and explicitly to provide the Ordnance Survey Data for the purpose of enabling them to provide goods or services to the Customer or to tender for the provision of such goods or services. The Customer must require such contractor or agent to sign a contractor licence with the Customer in the form of the Contractor Licence. The Customer must enforce the provision in such Contractor Licence which requires the contractor or agent to erase all copies of Ordnance Survey Data on or before termination of such Contractor Licence. This must include those held in paper based or any electronic format, provided that the Customer may permit such contractor or agent to retain one paper-based archive copy of Ordnance Survey Data which is relevant and necessary to document the goods or services delivered to the Customer;
+ 
+   2.2.4 where Ordnance Survey Data are available on an internal network or on a remotely accessible server operated by an electronic hosting service, the Customer must either take steps itself or enter into a written agreement in relation to the facilities provided by the electronic hosting service to provide for appropriate industry standard safeguards restricting third party access to any data of the Customer’s which include or incorporate any Ordnance Survey Data;
+ 
+   2.2.5 within any professional services provided by the Customer to its clients, provided that:
+ 
+     a) the provision of Ordnance Survey Data is not a service in itself and does not form a significant part of any service offered by the Customer;
+     b) Ordnance Survey Data may be provided only in paper form, or by electronic transmission of a graphic image that is a raster file produced solely for the purposes of allowing the recipient to view and print one copy;
+     c) only such amounts of Ordnance Survey Data may be used as are necessary to meet the specific need for which they are used; and
+     d) the use to which such clients shall put the Ordnance Survey Data shall be personal (in the case of a consumer client) or for the administration and operation of its business (in the case of a business client); and
+     the rights referred to in this Section 2.2.5 shall not apply where the Customer is an Excluded Body.
+ 
+ 2.3 For the avoidance of doubt the permission of Ordnance Survey for such supply of Ordnance Survey Data to third parties as specified in Section 2.2.3 above is given on the basis that the Customer remains responsible and primarily liable to Ordnance Survey for the acts and omissions of such contractors and agents.
+ 
+ 2.4 Such use does not extend to use of the Ordnance Survey Data:
+ 
+ 2.4.1 by any associated undertaking of the Customer, including associated, subsidiary, affiliated, holding or any parent or group companies or any other undertaking (save to the extent such associated undertaking is acting as a contractor or agent providing services pursuant to Section 2.2.3 or is a client for professional services pursuant to Section 2.2.5); or
+ 
+ 2.4.2 save in the case of contractors and agents providing services pursuant to Section
+ 
+ 2.2.3 for any Financial Gain or commercial purposes of the Customer, whether the Ordnance Survey Data are used on their own or in combination with any products or services of the Customer or which convey any Financial Gain for the benefit of any person other than the Customer or its employees.
+ 
+ 3 Conditions of use for publishing for display and/or promotional purposes
+ 
+ 3.1 Subject to the restrictions in Section 3.2 below, Ordnance Survey Data may be published for display and/or promotional purposes provided there is no Financial Gain but only:
+ 
+   3.1.1 as a background to display information specific to the Customer’s activities; or
+ 
+   3.1.2 to promote the Customer’s commercial or public services, provided that the use of Ordnance Survey Data is secondary to the Customer’s services or business activities and is not a service or business activity in itself; or
+ 
+   3.1.3 in order to provide directional guidelines on how to locate the Customer’s premises or a location relevant to the Customer’s day-to-day business activities.
+ 
+ 3.2 The following conditions apply to the publishing of the Ordnance Survey Data for Display and/or Promotional purposes by the Customer:
+ 
+   3.2.1 the correct database right, copyright, trade mark acknowledgements and licence number must be used. Acknowledgements are always required and each individual image using Ordnance Survey Data must contain the appropriate acknowledgement(s). Non-compliance will be regarded as a breach of your obligations under this Schedule and, without prejudice to any other rights, may incur royalties at our normal commercial use rates;
+ 
+   3.2.2 the Customer must overlay outputs generated using the Ordnance Survey Data with information that is specifically relevant to the purpose of the Display and/or Promotion. Use of Ordnance Survey Data in this manner must only be to demonstrate the services or activities to which the Ordnance Survey Data makes a significant contribution. Ordnance Survey Data must not be published on their own or in any format or as the primary or dominant part of any Display and/or Promotion and must always be combined with appropriate additional information relating to the Customer;
+ 
+   3.2.3 a visible background watermark to identify the source of the publication may be required by Ordnance Survey. This is a mandatory requirement when publishing Ordnance Survey Data electronically. The Customer shall choose its own method of applying a watermark from suitable alternatives. The purpose of the watermark is not to obscure or change the meaning of the Customer’s message, but to establish the source of the material and to deter its use for other purposes;
+ 
+   3.2.4 when using the Ordnance Survey Data, whether in paper or electronic format, the Customer is to include a brief statement of the purpose of the publication and the reason why mapping information is included together with limitations for its further use. This can be placed anywhere within the document;
+ 
+   3.2.5 the Customer shall use all reasonable endeavours to prevent the improper use of the Ordnance Survey Data by its staff or any third parties;
+ 
+   3.2.6 only such amounts of Ordnance Survey Data may be used as are necessary to meet the specific need for which they are used;
+ 
+   3.2.7 Ordnance Survey Data must not be published in their original condition either in paper or electronic form. Any publication, both paper and electronically, must feature such additional elements or content as are specifically relevant to the purpose to which they are put. Such additional content must be provided by the Customer and unless otherwise agreed with Ordnance Survey must be sufficiently significant to render the underlying Ordnance Survey Data unusable for any other purpose. When published electronically this additional content must be incorporated into the Ordnance Survey Data in a manner which does not allow them to be separated from each other unless expressly agreed in writing by Ordnance Survey; and
+ 
+   3.2.8 Ordnance Survey Data must not be published electronically in a manner which will allow vector map data to be extracted from the published materials. For the avoidance of doubt, this means in whole, part or derived vector data.
+ 
+ 4 Statutory use
+ 
+ 4.1 For the purpose of Section 4 of this Schedule:
+ 
+   4.1.1 Statutory Obligation means an expressly written obligation imposed by an Enactment upon the Customer, which requires the use of the Ordnance Survey Data to meet that obligation. This does not include a general obligation which does not specifically refer to a product or service which is to be delivered by the Customer; and
+ 
+   4.1.2 Enactment means a statute or act of the Parliament of Great Britain and Northern Ireland or of the Scottish Parliament or of the National Assembly for Wales, or a statutory instrument or other delegated legislation, including without limitation any such enactment made after the date of this Agreement.
+ 
+ 4.2 The Customer is permitted to use Ordnance Survey Data to meet a Statutory Obligation.
+ 
+ 4.3 The Customer is not permitted to exploit the Ordnance Survey Data in any way for commercial purposes or for Financial Gain other than as expressly provided in this Schedule, except pursuant to a separate licence agreement from Ordnance Survey permitting such activities.
+ 
+ 4.4 Only such amounts of Ordnance Survey Data may be used as are necessary to meet the specific need for which they are used.
+ 
+ 4.5 Ordnance Survey Data must not be published in their original condition either in paper or electronic form. Any publication, both on paper and electronically, must feature such additional elements or content as are specifically relevant to the purpose to which it is put. Such additional content must be provided by the Customer and must be sufficiently significant to render the underlying Ordnance Survey Data unusable for any other purpose. When published electronically this additional content must be incorporated into the Ordnance Survey Data in a manner which does not allow them to be separated from each other.
+ 
+ 4.6 Ordnance Survey Data must not be published electronically in a manner which will allow vector map data to be extracted from the published materials. For the avoidance of doubt, this means in whole, part or derived vector data.
+ 
+ 4.7 The Customer may provide copies of Ordnance Survey Data to any other customer of Ordnance Survey which has a Statutory Obligation and which is a party to an agreement with Ordnance Survey by which such customer is licensed on specific terms to use Ordnance Survey Data, provided that:
+ 
+   4.7.1 it shall advise such customer that any such Ordnance Survey Data shall only be used under the terms of such customer’s agreement with Ordnance Survey in relation to such customer’s right to meet what in this Agreement is described as a Statutory Obligation;
+ 
+   4.7.2 within thirty (30) days of the end of each quarter, it shall advise Ordnance Survey in writing of the names and addresses of each such customer to which it has supplied Ordnance Survey Data during such quarter. For these purposes, a quarter shall be a period of three (3) months commencing on the first day of January, April, July or October in each year; and
+ 
+   4.7.3 it shall include with the media embodying such Ordnance Survey Data a notice in terms approved by Ordnance Survey stating that the media contains mapping data which are the property of the Crown and that any unlawful use or copying other than for the purposes of viewing and printing is prohibited.
+
+
+ 
