@@ -10,6 +10,14 @@ library(jsonlite)
 library(reshape2)
 library(tidyr)
 library(TSP)
+library(spdep)
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+#MY FAVOURITE SPATIAL DOC----
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#Robin Lovelace / James Cheshire's intro to spatial analysis in R
+#https://cran.r-project.org/doc/contrib/intro-spatial-rl.pdf
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #LOAD ALL PUBS----
@@ -138,9 +146,10 @@ output
 #https://www.nceas.ucsb.edu/~frazier/RSpatialGuides/OverviewCoordinateReferenceSystems.pdf
 #http://gis.stackexchange.com/questions/64654/choosing-the-correct-value-for-proj4string-for-shape-file-reading-in-r-maptools
 
-
 #First, tell R the pub locations have web mercator projection
-pubs_geo <- pubs_w_names
+pubs_geo <- pubs_w_names[,c("name","real_ale","lonFinal","latFinal")]
+
+#MAGIC
 coordinates(pubs_geo) <- ~lonFinal+latFinal
 
 #can now plot that directly...
@@ -163,6 +172,8 @@ ttwas <- readOGR(dsn = 'data/England_ttwa_2001', layer = 'england_ttwa_2001')
 proj4string(ttwas)
 
 #Which is British National Grid, though a messy version
+
+#Transform to match the points
 #http://spatialreference.org/ref/epsg/27700/
 ttwas_latlon <- spTransform(ttwas, CRS('+init=epsg:4326'))
 
@@ -178,12 +189,21 @@ points(pubs_geo, col='red')
 #ttwas_latlon@data$NAME[grepl("sheffield",ttwas_latlon@data$NAME,ignore.case = T)]
 
 #Option one: subset as you would any df, but we can use particular polygons
-sheffoPubs <- pubs_geo[ttwas_latlon[ttwas_latlon$NAME=='Sheffield & Rotherham',], ]
+sheffieldTTWA <- ttwas_latlon[ttwas_latlon$NAME=='Sheffield & Rotherham',]
+plot(sheffieldTTWA)
+
+#MAGIC!
+sheffoPubs <- pubs_geo[sheffieldTTWA, ]
+
+#Do directly
+#sheffoPubs <- pubs_geo[ttwas_latlon[ttwas_latlon$NAME=='Sheffield & Rotherham',],]
+
+#Add to TTWA
+points(sheffoPubs, col="red")
 
 #Does the red deer have real ale?
 sheffoPubs$real_ale[grepl("red deer",sheffoPubs$name, ignore.case = T)]
 
-plot(sheffoPubs)
 
 #Bit too far and wide for a pub crawl. We can select manually as well...
 #xy=locator(2,"p") 
@@ -196,13 +216,15 @@ xy=locator(4,"p")
 boundingBox <- Polygon(xy)
 boundingBoxPoly <- SpatialPolygons(list(Polygons(list(boundingBox), ID = "a")), proj4string = CRS('+init=epsg:4326'))
 
+plot(boundingBoxPoly,add=T)
+
 sheffoPubs <- sheffoPubs[boundingBoxPoly,]
 
 #Looks better
-plot(sheffoPubs)
+points(sheffoPubs, col = "green")
 
-#save
-saveRDS(sheffoPubs,'data/sheffoPubsWithNames.rds')
+#SAVE
+#saveRDS(sheffoPubs,'data/sheffoPubsWithNames.rds')
 
 #~~~~~~~~~~~~~~~~~~~~~~
 #On map
@@ -231,13 +253,11 @@ output
 #NOTE: we can also find out what TTWAs all the pubs are in using %over%
 whereAreAllPubs <- pubs_geo %over% ttwas_latlon
 
-pubs_plusTTWAs <- cbind(data.frame(pubs_geo),whereAreAllPubs) %>% 
-  dplyr::select(name,NAME,lonFinal,latFinal)
+pubs_plusTTWAs <- cbind(data.frame(pubs_geo),whereAreAllPubs)
 
 ggplot() +
   geom_point(data = pubs_plusTTWAs,
              aes(x = lonFinal, y = latFinal, colour = NAME)) +
-  #scale_colour_manual(values = palette(rainbow( unique(pubs_plusTTWAs$NAME) %>% length() ))) +
   guides(colour = F)
 
 
@@ -245,8 +265,8 @@ ggplot() +
 #PICK MY FAVOURITE PUBS FROM THAT LIST----
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#Or reload just sheffo pubs
-#sheffoPubs <- readRDS('data/sheffoPubsWithNames.rds')
+#Reload just sheffo pubs
+sheffoPubs <- readRDS('data/sheffoPubsWithNames.rds')
 
 faves <- c(
   "Noah's Ark",
@@ -346,9 +366,6 @@ for(i in 2421:nrow(locationPairs)) {
   gimme <- GET(
     googleURL,  
     query = qry
-    #If using in Leeds University, obv: comment this out if not, or if using Leeds Uni wifi
-    #Use this to see details of proxy connection: c(use_proxy("www-cache.leeds.ac.uk:3128", 8080), verbose())
-    #c(use_proxy("www-cache.leeds.ac.uk:3128", 8080))
   )
   
   #http://blog.rstudio.org/2014/03/21/httr-0-3/
@@ -378,9 +395,8 @@ for(i in 2421:nrow(locationPairs)) {
   
 }#end for
 
-#save just in case - 841 searches
-#saveRDS(results,'data/fave29Pubs_googlematrix.rds')
-saveRDS(results,'data/allPubsWithNames_googlematrix_first3697.rds')
+#back up
+saveRDS(results,'data/googleMatrixAPIoutput.rds')
 
 #Just verbal description of time and distance
 #useresults <- results[,3:4]
@@ -413,7 +429,7 @@ write.csv(timematrix, file="data/timeresults.csv", row.names = F)
 #TSP package for travelling salesman.
 #We want: asymmetric, cos Sheffield hills means time is different
 #Depending on which way you're walking
-#And Hamiltonian: one visit per pub.
+timematrix <- read.csv('data/timeresults.csv')
 
 #https://cran.r-project.org/web/packages/TSP/TSP.pdf
 timematrix2 <- apply(timematrix, 2, as.integer)
@@ -423,22 +439,23 @@ pathObj <- ATSP(as.matrix(timematrix2[,2:ncol(timematrix)]), labels = subz$name)
 n_of_cities(pathObj)
 labels(pathObj)
 
+redDeer <- which(grepl("red deer",subz$name, ignore.case = T))
+
 #From TSP vignette
 #https://cran.r-project.org/web/packages/TSP/vignettes/TSP.pdf
 methods <- c("nearest_insertion", "farthest_insertion", "cheapest_insertion","arbitrary_insertion", "nn", "repetitive_nn", "two_opt")
 
-tours <- sapply(methods, FUN = function(m) solve_TSP(pathObj, method = m, start = 2L), simplify = F)
+tours <- sapply(methods, FUN = function(m) solve_TSP(pathObj, method = m, start = redDeer), simplify = F)
 
 dotchart(sort(c(sapply(tours, tour_length))),xlab = "tour length", xlim = c(0, 20000))
 
 
 #Single tour
 #http://stackoverflow.com/questions/29301916/how-to-specify-a-starting-city-using-the-tsp-package-in-r
-tour <- solve_TSP(pathObj,method = "farthest_insertion", start = 24L)
+tour <- solve_TSP(pathObj,method = "farthest_insertion", start = redDeer)
 
-tour_length(tour)/3600
+chron::times(tour_length(tour)/(3600*24))
 as.integer(tour)
-subz$name
 subz$name[as.integer(tour)]
 
 
@@ -447,37 +464,31 @@ subz$name[as.integer(tour)]
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #So no need for google querying, just find distance matrix
+pubs_geo2 <- sheffoPubs
+#pubs_geo2 <- sheffoPubs[sheffoPubs$name %in% faves,]
 
-#Not the right coordinate system
-#We could convert to British National Grid as its demoninated in metres
-#distMatrix2 <- dist(sheffoPubs[,c('lonFinal','latFinal')]) %>% as.matrix()
-
-#But...
-pubs_geo <- sheffoPubs
-pubs_geo <- sheffoPubs[sheffoPubs$name %in% faves,]
-
-coordinates(pubs_geo) <- ~lonFinal+latFinal
-proj4string(pubs_geo) <- '+init=epsg:4326'
+coordinates(pubs_geo2) <- ~lonFinal+latFinal
+proj4string(pubs_geo2) <- '+init=epsg:4326'
 
 #Units is KM
 #http://finzi.psych.upenn.edu/library/sp/html/spDistsN1.html
-distMatrix <- spDists(pubs_geo)
+distMatrix <- spDists(pubs_geo2)
 
-pathObj <- TSP(distMatrix, labels = pubs_geo$name)
+pathObj <- TSP(distMatrix, labels = pubs_geo2$name)
 
-pathObj
 n_of_cities(pathObj)
 labels(pathObj)
+
+redDeer <- which(grepl("red deer",pubs_geo2$name, ignore.case = T))
 
 #From TSP vignette
 #https://cran.r-project.org/web/packages/TSP/vignettes/TSP.pdf
 methods <- c("nearest_insertion", "farthest_insertion", "cheapest_insertion","arbitrary_insertion", "nn", "repetitive_nn", "two_opt")
 
-tours <- sapply(methods, FUN = function(m) solve_TSP(pathObj, method = m, start = 167L), simplify = F)
+tours <- sapply(methods, FUN = function(m) solve_TSP(pathObj, method = m, start = redDeer), simplify = F)
 
 dotchart(sort(c(sapply(tours, tour_length))),xlab = "tour length", xlim = c(0, 100))
 
-redDeer <- which(grepl("red deer",pubs_geo$name, ignore.case = T))
 
 #Single tour
 #http://stackoverflow.com/questions/29301916/how-to-specify-a-starting-city-using-the-tsp-package-in-r
@@ -485,9 +496,9 @@ tour <- solve_TSP(pathObj,method = "farthest_insertion", start = redDeer)
 
 tour_length(tour)
 as.integer(tour)
-pubs_geo$name[as.integer(tour)]
+pubs_geo2$name[as.integer(tour)]
 
-subz <- data.frame(pubs_geo)
+subz <- data.frame(pubs_geo2)
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 #PLOT PUB CRAWL----
@@ -502,7 +513,9 @@ output <- mapPoints +
              aes(x = lonFinal, y = latFinal, colour = factor(0 + (!is.na(subz$real_ale))),
                  shape = factor(0 + (!is.na(subz$real_ale)))),
              size = 3) +
+  
   geom_path(data = subz[as.integer(tour),], aes(x = lonFinal,y = latFinal)) +
+  
   geom_point(data = subz[as.integer(tour)[1],], aes(x = lonFinal,y = latFinal),
              colour = "green",size = 5) +
   geom_point(data = subz[as.integer(tour)[length(as.integer(tour))],], aes(x = lonFinal,y = latFinal),
@@ -516,7 +529,7 @@ output <- mapPoints +
 
 output
 
-#ggsave('images/largeCrawl.png',output,dpi=300,width = 30,height = 30)
+#ggsave('images/xxxlargeCrawl.png',output,dpi=300,width = 30,height = 30)
 
 
 #xy=locator(2,"p") 
